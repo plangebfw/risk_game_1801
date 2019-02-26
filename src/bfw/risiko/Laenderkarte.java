@@ -1,4 +1,4 @@
-package Risiko;
+package bfw.risiko;
 
 public class Laenderkarte extends Spielkarte{
 	private Land land;

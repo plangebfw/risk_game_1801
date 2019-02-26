@@ -1,4 +1,4 @@
-package Risiko;
+package bfw.risiko;
 
 public class Wuerfel {
 	private int aktuellerWert;
