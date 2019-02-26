@@ -12,7 +12,9 @@ public class Spiel {
 		this.spieler = spieler;
 	}
 	
-	
+	public static void main(String[] args) {
+		
+	}
 	
 	
 	
