@@ -16,11 +16,11 @@ public class Spiel {
 	/**
 	 * Die Liste der Tauschwerte für die Spielkarten.
 	 */
-	private int austauschBonusListe;
+	private int[] austauschBonusListe;
 	/**
 	 * Die Liste der Spieler
 	 */
-	private Spieler spieler;
+	private Spieler[] spieler;
 
 	/**
 	 * Erstellt ein neues Spiel.
@@ -29,7 +29,7 @@ public class Spiel {
 	 * @param austauschBonusListe   Liste von Tauschwerten
 	 * @param spieler               Liste von Spielern
 	 */
-	public Spiel(int austauschBonusAktuell, int austauschBonusListe, Spieler spieler ) {
+	public Spiel(int austauschBonusAktuell, int[] austauschBonusListe, Spieler[] spieler) {
 		this.austauschBonusAktuell = austauschBonusAktuell;
 		this.austauschBonusListe = austauschBonusListe;
 		this.spieler = spieler;
@@ -63,7 +63,7 @@ public class Spiel {
 	 * Gibt die aktuelle Liste von Tauschwerten zurück.
 	 * @return Liste von Tauschwerten
 	 */
-	public int getAustauschBonusListe() {
+	public int[] getAustauschBonusListe() {
 		return austauschBonusListe;
 	}
 
@@ -71,7 +71,7 @@ public class Spiel {
 	 * Ändert die Liste von Tauschwerten.
 	 * @param austauschBonusListe neue Liste von Tauschwerten
 	 */
-	public void setAustauschBonusListe(int austauschBonusListe) {
+	public void setAustauschBonusListe(int[] austauschBonusListe) {
 		this.austauschBonusListe = austauschBonusListe;
 	}
 
@@ -79,7 +79,7 @@ public class Spiel {
 	 * Gibt die Spieler zurück.
 	 * @return Liste von Spiele
 	 */
-	public Spieler getSpieler() {
+	public Spieler[] getSpieler() {
 		return spieler;
 	}
 
@@ -87,7 +87,7 @@ public class Spiel {
 	 * Ändert die Spieler.
 	 * @param spieler die neue Liste von Spielern
 	 */
-	public void setSpieler(Spieler spieler) {
+	public void setSpieler(Spieler[] spieler) {
 		this.spieler = spieler;
 	}
 }

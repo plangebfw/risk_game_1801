@@ -25,11 +25,11 @@ public class Spieler {
 	/**
 	 * Die Liste der Länder, die der Spieler besitzt.
 	 */
-	private Land besetzteLaender;
+	private Land[] besetzteLaender;
 	/**
 	 * Die Liste der Spielkarten, die der Spieler besitzt.
 	 */
-	private Spielkarte spielkarten;
+	private Spielkarte[] spielkarten;
 
 	/**
 	 * Erstellt einen neuen Spieler.
@@ -39,7 +39,7 @@ public class Spieler {
 	 * @param besetzteLaender Liste der Länder im Besitz des Spielers
 	 * @param spielkarten Liste der Karten im Besitz des Spielers
 	 */
-	public Spieler(String name, String farbe, Rolle rolle, Land besetzteLaender, Spielkarte spielkarten) {
+	public Spieler(String name, String farbe, Rolle rolle, Land[] besetzteLaender, Spielkarte[] spielkarten) {
 		this.name = name;
 		this.farbe = farbe;
 		this.rolle = rolle;
@@ -99,7 +99,7 @@ public class Spieler {
 	 * Gibt die Länder, die dem Spieler gehören, zurück.
 	 * @return eine Liste von Ländern
 	 */
-	public Land getBesetzteLaender() {
+	public Land[] getBesetzteLaender() {
 		return besetzteLaender;
 	}
 
@@ -107,7 +107,7 @@ public class Spieler {
 	 * Ändert die Länder, die dem Spieler gehören.
 	 * @param besetzteLaender neue Liste von Ländern
 	 */
-	public void setBesetzteLaender(Land besetzteLaender) {
+	public void setBesetzteLaender(Land[] besetzteLaender) {
 		this.besetzteLaender = besetzteLaender;
 	}
 
@@ -115,7 +115,7 @@ public class Spieler {
 	 * Gibt die Spielkarten, die dem Spieler gehören, zurück.
 	 * @return eine Liste von Spielkarten
 	 */
-	public Spielkarte getSpielkarten() {
+	public Spielkarte[] getSpielkarten() {
 		return spielkarten;
 	}
 
@@ -123,7 +123,7 @@ public class Spieler {
 	 * Ändert die Spielkarten, die dem Spieler gehören.
 	 * @param spielkarten neue Liste von Spielkarten
 	 */
-	public void setSpielkarten(Spielkarte spielkarten) {
+	public void setSpielkarten(Spielkarte[] spielkarten) {
 		this.spielkarten = spielkarten;
 	}
 }

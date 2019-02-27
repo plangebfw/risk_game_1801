@@ -27,7 +27,6 @@ public class Laenderkarte extends Spielkarte {
 	public Laenderkarte(Land land, Symboltyp symbol) {
 		this.land = land;
 		this.symbol = symbol;
-
 	}
 
 	/**
