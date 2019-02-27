@@ -3,6 +3,8 @@ package bfw.risiko;
 /**
  * <h1>Aufgabenkarte</h1>
  *
+ * Stellt den Auftrag des Spielers dar.
+ *
  * @since 2019-02-25
  */
 public class Aufgabenkarte extends Spielkarte {
