@@ -4,7 +4,8 @@ package bfw.risiko;
  * <h1>Kontinent</h1>
  * <p>
  * Ein Kontintent, mit einem Namen, einer Liste von Ländern,
- * und eventuell einem Besitzer.
+ * und einem Bonus für den Spieler, dem der ganze Kontinent
+ * gehört.
  *
  * @since 2019-02-25
  */
@@ -16,23 +17,23 @@ public class Kontinent {
 	/**
 	 * Die Länder, die auf dem Kontinent liegen.
 	 */
-	private Land laenderListe;
+	private Land[] laenderListe;
 	/**
-	 * Der Besitzer des Kontinents.
+	 * Der Bonus für den Kontinent
 	 */
-	private Spieler spieler;
+	private int bonus;
 
 	/**
 	 * Erstellt einen neuen Kontinent.
 	 *
 	 * @param name         der Name des Kontinents
 	 * @param laenderListe eine Liste von Ländern
-	 * @param spieler      der Besitzer
+	 * @param bonus der Bonuswert
 	 */
-	public Kontinent(String name, Land laenderListe, Spieler spieler) {
+	public Kontinent(String name, Land[] laenderListe, int bonus) {
 		this.name = name;
 		this.laenderListe = laenderListe;
-		this.spieler = spieler;
+		this.bonus = bonus;
 	}
 
 	/**
@@ -55,7 +56,7 @@ public class Kontinent {
 	 * Gibt die Länder, die auf diesem Kontinent liegen, zurück.
 	 * @return Liste von Ländern
 	 */
-	public Land getLaenderListe() {
+	public Land[] getLaenderListe() {
 		return laenderListe;
 	}
 
@@ -63,23 +64,23 @@ public class Kontinent {
 	 * Ändert die Länderliste dieses Kontinents.
 	 * @param laenderListe die neue Liste von Ländern
 	 */
-	public void setLaenderListe(Land laenderListe) {
+	public void setLaenderListe(Land[] laenderListe) {
 		this.laenderListe = laenderListe;
 	}
 
 	/**
-	 * Gibt den Besitzer des Kontinents zurück.
-	 * @return den Spieler oder null, wenn kein Spieler den gesamten Kontinent besitzt
+	 * Gibt den Bonus für den Kontinent zurück.
+	 * @return der Bonus
 	 */
-	public Spieler getSpieler() {
-		return spieler;
+	public int getBonus() {
+		return bonus;
 	}
 
 	/**
-	 * Ändert den Besitzer des Kontinents.
-	 * @param spieler der neue Besitzer
+	 * Ändert den Bonus dieses Kontinents.
+	 * @param bonus der neue Kontinent
 	 */
-	public void setSpieler(Spieler spieler) {
-		this.spieler = spieler;
+	public void setBonus(int bonus) {
+		this.bonus = bonus;
 	}
 }

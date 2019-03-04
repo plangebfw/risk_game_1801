@@ -19,20 +19,20 @@ public class Besatzung {
 	 */
 	private Spieler spieler;
 	/**
-	 * Der Bonus für den Spieler, dem der Kontinent gehört.
+	 * Das Land des Spielers.
 	 */
-	private int bonus;
+	private Land land;
 
 	/**
 	 * Erstellt eine neue Besatzung.
 	 * @param anzahl die Anzahl der Einheiten, auf dem Land
 	 * @param spieler der Besitzer des Landes
-	 * @param bonus der Bonus für den Besitzer des ganzen Kontinents
+	 * @param land das Land
 	 */
-	public Besatzung(int anzahl, Spieler spieler, int bonus) {
+	public Besatzung(int anzahl, Spieler spieler, Land land) {
 		this.anzahl = anzahl;
 		this.spieler = spieler;
-		this.bonus = bonus;
+		this.land = land;
 	}
 
 	/**
@@ -68,18 +68,18 @@ public class Besatzung {
 	}
 
 	/**
-	 * Gibt den Bonus des Spielers zurück.
-	 * @return den Bonus
+	 * Gibt das Land des Spielers zurück.
+	 * @return das Land
 	 */
-	public int getBonus() {
-		return bonus;
+	public Land getLand() {
+		return land;
 	}
 
 	/**
-	 * Ändert den Bonus des Spielers.
-	 * @param bonus der neue Bonus
+	 * Ändert das Land das besetzt ist.
+	 * @param land das neue Land
 	 */
-	public void setBonus(int bonus) {
-		this.bonus = bonus;
+	public void setLand(Land land) {
+		this.land = land;
 	}
 }

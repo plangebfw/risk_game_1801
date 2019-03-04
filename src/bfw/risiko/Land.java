@@ -20,7 +20,7 @@ public class Land {
 	/**
 	 * Eine Liste von Nachbarn.
 	 */
-	private Land nachbarn;
+	private Land[] nachbarn;
 	/**
 	 * Der Besitzer des Landes.
 	 */
@@ -33,7 +33,7 @@ public class Land {
 	 * @param nachbarn eine Liste von Nachbarn
 	 * @param spieler der Besitzer
 	 */
-	public Land(String name, Kontinent kontinent, Land nachbarn, Spieler spieler) {
+	public Land(String name, Kontinent kontinent, Land[] nachbarn, Spieler spieler) {
 		this.name = name;
 		this.kontinent = kontinent;
 		this.nachbarn = nachbarn;
@@ -76,7 +76,7 @@ public class Land {
 	 * Gibt die Nachbarn dieses Landes zurück.
 	 * @return eine Liste von Nachbarn
 	 */
-	public Land getNachbarn() {
+	public Land[] getNachbarn() {
 		return nachbarn;
 	}
 
@@ -84,7 +84,7 @@ public class Land {
 	 * Ändert die Nachbarn dieses Landes.
 	 * @param nachbarn die neue Liste von Nachbarn
 	 */
-	public void setNachbarn(Land nachbarn) {
+	public void setNachbarn(Land[] nachbarn) {
 		this.nachbarn = nachbarn;
 	}
 
