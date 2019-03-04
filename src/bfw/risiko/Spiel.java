@@ -40,6 +40,8 @@ public class Spiel {
 	 * @param args keine
 	 */
 	public static void main(String[] args) {
+		
+		
 		System.exit(0);
 	}
 
