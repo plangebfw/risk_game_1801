@@ -82,4 +82,8 @@ public class Wuerfel {
 	public void setFarbe(String farbe) {
 		this.farbe = farbe;
 	}
+	
+	public void wuerfeln() {
+		this.aktuellerWert=((int) (Math.random() * this.maxWert)) +1;
+	}
 }
